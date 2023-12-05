@@ -1,59 +1,8 @@
-$color1: pink;
-$color2: rgb(230,56,54);
-$color3: cyan;
-$white: rgb(240, 240, 240);
-$black: rgb(29, 28, 31);
-
-body {
-    background: $black;
-    color: $white;
-}
-
-nav {
-    background: pink;
-    border-radius: 10px;
-    color: $black;
-
-    ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 40px;
-        li {
-            list-style: none;
-        }
-    }
-}
-
-header {
-    h1 {
-        font-size: 3rem;
-        text-align: center;
-
-        &::after {
-            content: "*";
-            position: absolute;
-            transform: translateY(-6px);
-            color: pink;
-            transition: 0.2s;
-        }
-        &:hover::after {
-            transform: scale(2);
-        }
-
-        @media screen and (max-width: 700px) {
-            font-size: 1rem;
-        }
-    }
-}
-
-section {
-    height: 400px;
-    border: 1px solid $color1;
-    border-radius: 10px;
-
-    p {
-        width: 50%;
-        text-align: center;
-    }
-}
+@import "./pages/home";
+@import "./pages/about";
+@import "./settings";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/navbar";
+@import "./components/button";
+@import "./components/form";
