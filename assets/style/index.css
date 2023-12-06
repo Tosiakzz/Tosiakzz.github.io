@@ -47,7 +47,7 @@ body:before {
 .btn {
   background: none;
   border: 1px solid rgb(17, 17, 17);
-  width: 45px;
+  height: 45px;
   width: 170px;
   font-size: 0.75rem;
   cursor: pointer;
@@ -240,9 +240,72 @@ main .section1 span:before, main .section1 span:after {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+@media screen and (max-width: 700px) {
+  main .section1 span:before, main .section1 span:after {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .section1 span:before, main .section1 span:after {
+    width: 24%;
+  }
+}
 main .section1 span:before {
   left: 0;
 }
 main .section1 span:after {
   right: 0;
+}
+main .section1 h2 {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+@media screen and (max-width: 700px) {
+  main .section1 h2 {
+    font-size: 1.5rem;
+  }
+}
+main .section1 p {
+  width: 60%;
+  margin: 30px auto;
+  font-style: italic;
+  font-size: 0.8rem;
+  line-height: 35px;
+}
+main .section1 .btn {
+  margin: 50px 0 80px;
+}
+main .section2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-top: 1px solid rgb(209, 209, 209);
+}
+@media screen and (max-width: 700px) {
+  main .section2 {
+    grid-template-columns: 1fr;
+  }
+}
+main .section2 .left-part, main .section2 .right-part {
+  padding: 50px;
+}
+main .section2 .left-part span, main .section2 .right-part span {
+  font-size: 0.7rem;
+}
+main .section2 .left-part h3, main .section2 .right-part h3 {
+  margin: 20px 0;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+main .section2 .left-part p, main .section2 .right-part p {
+  text-align: left;
+  font-size: 0.75rem;
+  margin: 30px 0;
+  line-height: 30px;
+}
+main .section2 .left-part {
+  border-right: 1px solid rgb(209, 209, 209);
 }/*# sourceMappingURL=index.css.map */
