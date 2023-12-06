@@ -1,3 +1,40 @@
-section {
+main {
+    width: 85%;
+    margin: 0 auto 30px;
     background: $white;
+
+    img {
+        width: 100%;
+    }
+
+    .section1 {
+        width: 80%;
+        margin: auto;
+
+        span {
+            padding: 70px 0;
+            position: relative;
+            display: block;
+
+            &:before, &:after {
+                content: "";
+                position: absolute;
+                background: $gray1;
+                height: 1px;
+                width: 35%;
+                top: 50%;
+                transform:  translateY(-50%);
+
+                @media screen and(max-width:700px) {
+                    width: 24px;
+                }
+            }
+            &:before {
+                left: 0;
+            }
+            &:after {
+                right: 0;
+            }
+        }
+    }
 }

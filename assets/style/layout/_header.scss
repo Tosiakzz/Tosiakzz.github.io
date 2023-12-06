@@ -38,7 +38,7 @@ header {
             height: 60px;
             width: 60px;
             font-size: 1.2rem;
-            @include centerChild
+            @include centerChild;
         }
     }
 
@@ -67,9 +67,39 @@ header {
             li {
                 @include title;
                 font-size: 0.7rem;
+                padding: 0 15px;
+                height: 100%;
+                @include centerChild;
+
+                @media screen and (max-width: 700px) {
+                    font-size: 0.5rem;
+                }
+
+                &:first-child, &:hover {
+                    background: $white;
+                    color: $black;
+                }
             }
         }
+        .nav-right {
+            font-size: 1.1rem;
+            min-width: 100px;
+            width: 25%;
+            max-width: 300px;
+            justify-content: space-around;
 
+            @media screen and (max-width: 700px) {
+            display: none;
+            }
+
+            li {
+                transition: 0.15s;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
     }
-
 }
