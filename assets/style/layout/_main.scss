@@ -65,7 +65,7 @@ main {
         grid-template-columns: 50% 50%;
         border-top: 1px solid $gray1;
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 900px) {
             grid-template-columns: 1fr;
         }
 
@@ -89,6 +89,11 @@ main {
         }
         .left-part {
             border-right: 1px solid $gray1;
+
+            @media screen and (max-width: 900px) {
+                border-bottom: 1px solid $gray1;
+                border-right: none;
+            }
         }
     }
 }
