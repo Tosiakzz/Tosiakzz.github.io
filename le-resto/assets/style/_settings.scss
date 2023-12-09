@@ -1,0 +1,32 @@
+$fontdeco: 'Allura', cursive;
+$fonttitle: 'Poppins', sans-serif;
+$fontall: 'Roboto', sans-serif;
+$white: #eee;
+$black: #21201e;
+$grey: rgb(182,182,182);
+$color1: rgb(166,114,69);
+
+@mixin centerChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin alignChildren($space) {
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: $black;
+    text-align: center;
+    font-family: $fontall;
+}
