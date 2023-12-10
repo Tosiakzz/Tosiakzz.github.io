@@ -23,7 +23,7 @@ header nav {
   display: grid;
   grid-template-columns: 10% 80% 10%;
   height: 12vh;
-  max-width: 1300px;
+  max-width: 1100px;
   margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -117,4 +117,57 @@ header .header-text div h6 {
   font-size: 0.75rem;
   letter-spacing: 6px;
   font-weight: 100;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: #eee;
+}
+@media screen and (max-width: 700px) {
+  .section1 {
+    grid-template-columns: 1fr;
+  }
+}
+.section1 .store-text {
+  border: 1px dashed rgb(166, 114, 69);
+  margin: 15px;
+  padding: 30px 15px;
+}
+.section1 .store-text h2 {
+  font-family: "Allura", cursive;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(166, 114, 69);
+}
+.section1 .store-text h3 {
+  font-family: "Poppins", sans-serif;
+  margin-top: -12px;
+}
+.section1 .store-text img {
+  margin: 26px;
+}
+.section1 .store-text p {
+  font-weight: 100;
+}
+.section1 .store-text img:nth-of-type(2) {
+  height: 70px;
+  border-radius: 50px;
+  margin-bottom: 8px;
+}
+.section1 .store-text h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+.section1 .store-text h5 {
+  font-size: 0.7rem;
+  color: rgb(182, 182, 182);
+}
+.section1 .store-img {
+  background: url(../img/store-01.jpg) center/cover;
+}
+@media screen and (max-width: 700px) {
+  .section1 .store-img {
+    display: none;
+  }
 }/*# sourceMappingURL=leresto.css.map */
