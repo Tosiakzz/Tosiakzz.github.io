@@ -31,16 +31,19 @@
             width: 90%;
             font-size: 0.65rem;
         }
-
+        
+        &:hover li:not(:hover) {
+            border-bottom: 1px solid $grey;
+        }
+        
         li {
             border-bottom: 1px solid $grey;
             padding-bottom: 8px;
             transition: 0.2s;
             cursor: pointer;
-
-            &:hover {
-                border-bottom: 2px solid $color1;
-                transform: scale(1.1);
+            
+            &:hover, &:nth-child(2) {
+                border-bottom: 1px solid $color1;
             }
         }
     }

@@ -5,6 +5,7 @@
   list-style: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: default;
 }
 
 body {
@@ -216,6 +217,9 @@ header .header-text div h6 {
     font-size: 0.65rem;
   }
 }
+.section2 ul:hover li:not(:hover) {
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
 .section2 ul li {
   border-bottom: 1px solid rgb(182, 182, 182);
   padding-bottom: 8px;
@@ -223,10 +227,8 @@ header .header-text div h6 {
   transition: 0.2s;
   cursor: pointer;
 }
-.section2 ul li:hover {
-  border-bottom: 2px solid rgb(166, 114, 69);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.section2 ul li:hover, .section2 ul li:nth-child(2) {
+  border-bottom: 1px solid rgb(166, 114, 69);
 }
 .section2 .plats {
   background: #eee;
@@ -280,4 +282,53 @@ header .header-text div h6 {
   color: rgb(166, 114, 69);
   font-weight: 600;
   font-size: 1.1rem;
+}
+
+.section3 {
+  max-width: 1000px;
+  width: 85%;
+  margin: 80px auto;
+  background: black;
+}
+.section3 .form-content {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.section3 .form-content .hours {
+  padding: 20px;
+}
+.section3 .form-content .hours .hours-content {
+  color: #eee;
+  border: 1px dashed #eee;
+  padding: 20px 0 30px;
+}
+.section3 .form-content .hours .hours-content h3 {
+  font-family: "Allura", cursive;
+  font-size: 2.2rem;
+  font-weight: 100;
+  color: rgb(166, 114, 69);
+}
+.section3 .form-content .hours .hours-content h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: -15px;
+}
+.section3 .form-content .hours .hours-content img {
+  margin: 20px 0 5px;
+}
+.section3 .form-content .hours .hours-content h5 {
+  font-family: "Poppins", sans-serif;
+  color: rgb(166, 114, 69);
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin: 30px 0 10px;
+}
+.section3 .form-content .hours .hours-content p {
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: -5px;
+}
+.section3 .form-content .form-infos {
+  background: #eee;
 }/*# sourceMappingURL=leresto.css.map */

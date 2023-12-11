@@ -1,0 +1,54 @@
+.section3 {
+    max-width: 1000px;
+    width: 85%;
+    margin: 80px auto;
+    background: black;
+
+    .form-content {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        
+        .hours{
+            padding: 20px;
+
+            .hours-content{
+                color: $white;
+                border: 1px dashed $white;
+                padding: 20px 0 30px;
+
+                h3 {
+                    font-family: $fontdeco;
+                    font-size: 2.2rem;
+                    font-weight: 100;
+                    color: $color1;
+                }
+                h4 {
+                    font-family: $fonttitle;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    margin-top: -15px;
+                }
+                img {
+                    margin: 20px 0 5px;
+                }
+                h5 {
+                    font-family: $fonttitle;
+                    color: $color1;
+                    letter-spacing: 1px;
+                    font-size: 1rem;
+                    margin: 30px 0 10px;
+                }
+                p {
+                    font-weight: 300;
+                    font-size: 0.8rem;
+                    line-height: -5px;
+                }
+            }
+
+
+        }
+        .form-infos {
+            background: $white;
+        }
+    }
+}
