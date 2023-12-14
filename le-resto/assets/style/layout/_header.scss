@@ -1,87 +1,86 @@
 header {
-    background: url(../img/bg-slider-06.jpg) center/cover;
-    padding: 0 50px;
-    color: $white;
-    min-height: 100vh;
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  padding: 0 50px;
+  color: $white;
+  min-height: 100vh;
 
-    nav {
-        display: grid;
-        grid-template-columns: 10% 80% 10%;
-        height: 12vh;
-        max-width: 1300px;
-        width: 85%;
-        margin: auto;
-        align-items: center;
+  nav {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    height: 12vh;
+    max-width: 1300px;
+    width: 85%;
+    margin: auto;
+    align-items: center;
 
-        @media screen and (max-width: 700px) {
-            grid-template-columns: 50% 40% 10%;
-        }
-
-        .logo {
-            font-family: $fontdeco;
-            font-weight: 100;
-            font-size: 2rem;
-            text-align: left;
-        }
-        .nav-elements {
-            @include alignChildren(space-around);
-            text-transform: uppercase;
-            font-size: 0.7;
-            padding: 0 30px;
-
-            @media screen and (max-width: 700px) {
-                visibility: hidden;
-            }
-
-            li {
-                cursor: pointer;
-            }
-        }
-        .nav-social {
-            @include alignChildren(space-around);
-            font-size: 0.8rem;
-
-            i {
-                cursor: pointer;
-                transition: 0.2s;
-
-                &:hover {
-                    transform: scale(1.3);
-                }
-            }
-            
-        }
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 50% 40% 10%;
     }
 
-    .header-text {
-        @include centerChild;
-        height: 88vh;
-
-        div {
-            margin-top: -150px;
-
-            h2 {
-                font-family: $fontdeco;
-                font-size: 3rem;
-                font-weight: 100;
-                color: $color1;
-            }
-            h1 {
-                font-size: 3.2rem;
-                letter-spacing: 10px;
-                font-weight: 700;
-                margin-top: -28px;
-                font-family: $fonttitle;
-            }
-            img {
-                height: 27px;
-                margin: 32px 0;
-            }
-            h6 {
-                font-size: 0.75rem;
-                letter-spacing: 6px;
-                font-weight: 100;
-            }
-        }
+    .logo {
+      font-family: $fontdeco;
+      font-weight: 100;
+      font-size: 2rem;
+      text-align: left;
     }
+    .nav-elements {
+      @include alignChildren(space-around);
+      text-transform: uppercase;
+      font-size: 0.7;
+      padding: 0 30px;
+
+      @media screen and (max-width: 700px) {
+        visibility: hidden;
+      }
+
+      li {
+        cursor: pointer;
+      }
+    }
+    .nav-social {
+      @include alignChildren(space-around);
+      font-size: 0.8rem;
+
+      i {
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+
+  .header-text {
+    @include centerChild;
+    height: 88vh;
+
+    div {
+      margin-top: -150px;
+
+      h2 {
+        font-family: $fontdeco;
+        font-size: 3rem;
+        font-weight: 100;
+        color: $color1;
+      }
+      h1 {
+        font-size: 3.2rem;
+        letter-spacing: 10px;
+        font-weight: 700;
+        margin-top: -28px;
+        font-family: $fonttitle;
+      }
+      img {
+        height: 27px;
+        margin: 32px 0;
+      }
+      h6 {
+        font-size: 0.75rem;
+        letter-spacing: 6px;
+        font-weight: 100;
+      }
+    }
+  }
 }
