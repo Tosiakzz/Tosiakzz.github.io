@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Peridia-Light";
+  src: url(../assets/Peridia_display/Peridia-Display-Light.ttf);
+}
+@font-face {
+  font-family: "Peridia-Regular";
+  src: url(../assets/Peridia_display/Peridia-Display-Regular.ttf);
+}
+
+$font1lig: "Peridia-Light", cursive;
+$font1reg: "Peridia-Regular", sans-serif;
+$font2: Helvetica;
+
+$black: #000000;
+$white: #ffffff;
+$grey: #a7a7a7;
+$color1: #00ff85;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font2;
+  font-weight: 300;
+  color: $black;
+}
