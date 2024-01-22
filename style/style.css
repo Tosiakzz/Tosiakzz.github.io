@@ -13,6 +13,7 @@
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: default;
 }
 
 body {
@@ -36,12 +37,37 @@ header nav {
   margin: 40px 0;
 }
 header nav #name {
-  position: absolute;
+  position: relative;
   -webkit-transition: 1s;
   transition: 1s;
   font-weight: 700;
+  margin: 0 3%;
   font-size: 1.75rem;
-  margin-left: 47px;
+  width: 280px;
+  -webkit-animation: text-growth linear;
+          animation: text-growth linear;
+  animation-timeline: scroll();
+  animation-range-end: 400px;
+}
+@-webkit-keyframes text-growth {
+  0% {
+    width: 94%;
+    top: -20px;
+  }
+  100% {
+    width: 280px;
+    top: 0;
+  }
+}
+@keyframes text-growth {
+  0% {
+    width: 94%;
+    top: -20px;
+  }
+  100% {
+    width: 280px;
+    top: 0;
+  }
 }
 header nav .nav-btn {
   display: -webkit-box;
@@ -55,6 +81,26 @@ header nav .nav-btn {
   font-weight: 700;
   font-size: 1.75rem;
   margin-right: 57px;
+  -webkit-animation: nav-opacity linear;
+          animation: nav-opacity linear;
+  animation-timeline: scroll();
+  animation-range-end: 400px;
+}
+@-webkit-keyframes nav-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes nav-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 header nav .nav-btn a {
   color: #a7a7a7;
@@ -100,8 +146,15 @@ footer {
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
   opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-footer h3 {
+footer a {
   color: #000000;
   font-family: Helvetica;
   font-size: 1.75rem;

@@ -39,15 +39,15 @@ const footer = document.querySelector("footer");
 window.addEventListener("scroll", () => {
   let scrollValue = window.scrollY / document.body.offsetHeight;
 
-  if (scrollValue < 0.05) {
-    name.style.fontSize = "10.3vw";
-    name.style.top = "-24px";
-    nav.style.opacity = "0";
-  } else {
-    name.style.fontSize = "1.75rem";
-    name.style.top = "0px";
-    nav.style.opacity = "1";
-  }
+  // if (scrollValue < 0.05) {
+  //   name.style.fontSize = "10.3vw";
+  //   name.style.top = "-24px";
+  //   nav.style.opacity = "0";
+  // } else {
+  //   name.style.fontSize = "1.75rem";
+  //   name.style.top = "0px";
+  //   nav.style.opacity = "1";
+  // }
 
   if (scrollValue < 0.4) {
     footer.style.opacity = 0;

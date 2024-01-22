@@ -9,11 +9,27 @@ header {
     margin: 40px 0;
 
     #name {
-      position: absolute;
+      position: relative;
       transition: 1s;
       font-weight: 700;
+      margin: 0 3%;
       font-size: 1.75rem;
-      margin-left: 47px;
+      width: 280px;
+
+      animation: text-growth linear;
+      animation-timeline: scroll();
+      animation-range-end: 400px;
+
+      @keyframes text-growth {
+        0% {
+          width: calc(100% - 6%);
+          top: -20px;
+        }
+        100% {
+          width: 280px;
+          top: 0;
+        }
+      }
     }
     .nav-btn {
       display: flex;
@@ -24,6 +40,19 @@ header {
       font-weight: 700;
       font-size: 1.75rem;
       margin-right: 57px;
+
+      animation: nav-opacity linear;
+      animation-timeline: scroll();
+      animation-range-end: 400px;
+
+      @keyframes nav-opacity {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
 
       a {
         color: $grey;
@@ -65,8 +94,10 @@ footer {
   position: fixed;
   transition: 0.5s ease-in;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
 
-  h3 {
+  a {
     color: $black;
     font-family: $font2;
     font-size: 1.75rem;
