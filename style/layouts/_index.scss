@@ -1,7 +1,7 @@
 #projects {
   min-height: 100vh;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     min-height: 135vh;
     max-width: 100vw;
     overflow: hidden;
@@ -18,7 +18,7 @@
     @media screen and (max-width: 1200px) {
       column-gap: 50px;
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       display: inline-flex;
       margin: 0 20px;
     }
@@ -52,7 +52,7 @@
         @media screen and (max-width: 1200px) {
           font-size: 2.5rem;
         }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 600px) {
           font-size: 2rem;
         }
 
@@ -71,7 +71,7 @@
           @media screen and (max-width: 1200px) {
             font-size: 1rem;
           }
-          @media screen and (max-width: 500px) {
+          @media screen and (max-width: 600px) {
             font-size: 0.8rem;
           }
         }
