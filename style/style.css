@@ -247,7 +247,7 @@ footer a {
 }
 @media screen and (max-width: 700px) {
   #projects .project-container .div h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 #projects .project-container .div h2:hover {
@@ -270,7 +270,7 @@ footer a {
 }
 @media screen and (max-width: 700px) {
   #projects .project-container .div h2 sup {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 #projects .project-container .image {
@@ -279,4 +279,9 @@ footer a {
   z-index: -20;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1000px) {
+  #projects .project-container .image {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
