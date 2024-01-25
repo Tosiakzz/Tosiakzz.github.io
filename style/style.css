@@ -167,6 +167,11 @@ footer a {
 #projects {
   min-height: 100vh;
 }
+@media screen and (max-width: 500px) {
+  #projects {
+    min-height: 135vh;
+  }
+}
 #projects .project-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,6 +184,21 @@ footer a {
      -moz-column-gap: 80px;
           column-gap: 80px;
   row-gap: 52px;
+}
+@media screen and (max-width: 1200px) {
+  #projects .project-container {
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #projects .project-container {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 0 20px;
+  }
 }
 #projects .project-container .div {
   -webkit-animation: fade-in linear;
