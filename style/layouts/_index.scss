@@ -35,6 +35,12 @@
         @media screen and (max-width: 1500px) {
           font-size: 3rem;
         }
+        @media screen and (max-width: 1200px) {
+          font-size: 2.5rem;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 2rem;
+        }
 
         &:hover {
           color: $color1;
@@ -47,6 +53,12 @@
 
           @media screen and (max-width: 1500px) {
             font-size: 1.2rem;
+          }
+          @media screen and (max-width: 1200px) {
+            font-size: 1rem;
+          }
+          @media screen and (max-width: 500px) {
+            font-size: 0.8rem;
           }
         }
       }
