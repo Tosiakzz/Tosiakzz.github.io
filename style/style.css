@@ -134,6 +134,16 @@ header .description p {
   font-size: 1.7rem;
   font-weight: 300;
 }
+@media screen and (max-width: 1200px) {
+  header .description p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  header .description p {
+    font-size: 1rem;
+  }
+}
 header .description p sup {
   font-size: 1rem;
 }
